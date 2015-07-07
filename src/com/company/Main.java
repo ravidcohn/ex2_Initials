@@ -27,7 +27,7 @@ public class Main {
             // think about what to do now, and put it here.
             ex.printStackTrace(); // for now, simply output it.
         }*/
-        Document doc = Jsoup.connect("https://en.wikipedia.org/wiki/Shmuel_Safra").get();
+        Document doc = Jsoup.connect("http://www.cs.berkeley.edu/~tberg/papers/emnlp2012.pdf").get();
         String text = doc.body().text();
         String[] lines = text.split("\\.");
         int i = 1;
